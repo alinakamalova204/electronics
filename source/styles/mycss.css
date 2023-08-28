@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css?family=ComicNeue&display=swap");
+
+body {
+  font-family: ComicNeue, serif;
+  /*background: linear-gradient(189deg, #6E38F4 0%, #D027F3 100%);*/
+  background: linear-gradient(189deg, #9e7394 0%, #f0d6ab 100%);
+}
+.h1 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em;
+}
+p{
+  color: #000000;
+}
+.nav-link {
+  /*цвет слова на странице которой мы не находимся*/
+  color: aqua;
+  /*color: antiquewhite;*/
+}
+.navbar-nav .nav-link.active {
+  color: rgb(142, 140, 138);
+} 
+.navbar-brand img {
+  /*логотип*/
+  width: 40px;
+}
+.navbar-toggler {
+  /*цвет бургер кнопки в маленком экране*/
+  background-color: aqua;
+}
+.sidebar {
+  color: black; /*цвет рекламы*/
+  background: linear-gradient(270deg, #f1d9b3 0%, #9e7394 100%);
+ background: linear-gradient(270deg,  #884b6d 0%,#e4aced 100%);
+ 
+}
+.card {
+  color: black; /*карты*/
+  background: linear-gradient(120deg, #f1d9b3 0%, #a1babd 100%);
+  background: linear-gradient(270deg,  #3b1b2d 0%,#c2b5c3 100%);
+}
+.btn-outline-primary{
+  color: #000;
+  background-color: #884b6d;
+}
+.color-but{
+  color: #000;
+  text-decoration: none;
+}
+
+.card a {
+  text-decoration: none;
+  color: black;
+}
+.slide-text {
+  color: #000;
+  margin: auto auto;
+}
+footer{ /*градиент внизу*/
+  background: linear-gradient(270deg, #5f4c2a 0%, #cfc7b0 100%);
+}
+.media-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.call-animation{
+  animation: myAnim 2s ease 0s infinite reverse forwards;
+}
+
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0%);
+		transform-origin: 50% 50%;
+	}
+
+	15% {
+		transform: translateX(-30px) rotate(6deg);
+	}
+
+	30% {
+		transform: translateX(15px) rotate(-6deg);
+	}
+
+	45% {
+		transform: translateX(-15px) rotate(3.6deg);
+	}
+
+	60% {
+		transform: translateX(9px) rotate(-2.4deg);
+	}
+
+	75% {
+		transform: translateX(-6px) rotate(1.2deg);
+	}
+}
+
+@media (max-width: 755px) {
+  .carousel-indicators {
+    display: none;
+  }
+}
